@@ -1,0 +1,51 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible", content="ie=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title 北科大小工具
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css")
+    body
+        div(class="top-bar")
+            div(class="row")
+                div(class="top-bar-left")
+                    ul(class="dropdown menu", data-dropdown-menu)
+                        li(class="menu-text") 北科大小工具
+        div(class="row")
+            div(class="column")
+                h1= C10302.info[0] + "學年度第" + C10302.info[1] + "學期國文會考"
+                h2 第壹題、以下每小題（ ）中的字都是錯別字，請改寫為正確的字形。
+                table
+                    tr
+                        each val, index in C10302.A
+                            td= index+1
+                    tr
+                        each val, index in C10302.A
+                            td= val
+                ol
+                    each val, index in C10302.B
+                        li= val
+                h2 第貳題、請將下列各題成語（ ）內缺空的字，按號碼順序填入答案欄。
+                table
+                    tr
+                        each val, index in C10302.C
+                            td= index+16
+                    tr
+                        each val, index in C10302.C
+                            td= val
+                ul
+                    each val, index in C10302.D
+                        li= val
+                h2 第參題、請按（ ）內的字音寫出正確的字形。
+                table
+                    tr
+                        each val, index in C10302.E
+                            td= index+31
+                    tr
+                        each val, index in C10302.E
+                            td= val
+                ol(start="31")
+                    each val, index in C10302.F
+                        li= val
+        script(src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js")
