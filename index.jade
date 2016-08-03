@@ -6,15 +6,16 @@ html
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title 北科大小工具
         link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css")
     body
-        div(class="top-bar")
+        div(class="top-bar hide-for-print")
             div(class="row")
                 div(class="top-bar-left")
                     ul(class="dropdown menu", data-dropdown-menu)
-                        li(class="menu-text") 北科大小工具
+                        li(class="menu-text") <i class="fi-wrench"></i>&nbsp;北科大小工具
 - var exams = [C10402, C10401, C10302, C10301, C10202, C10201, C10102, C10101, C10002, C10001, C9902, C9901, C9802, C9801, C9702, C9701, C9602, C9601, C9502, C9501, C9402, C9401, C9302];
         each exam in exams
-            div(class="row")
+            div(class="row", style="page-break-after: always;")
                 div(class="column")
                     h1= exam.info[0] + "學年度第" + exam.info[1] + "學期國文會考"
                     h2 第壹題、以下每小題都有一個錯別字，請改寫為正確的字形。（每字二分，共三十分）
