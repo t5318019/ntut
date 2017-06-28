@@ -1,0 +1,17 @@
+{
+  "name": "ntut",
+  "version": "1.0.0",
+  "description": "NTUT Gadget",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t5318019/ntut.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t5318019/ntut/issues"
+  },
+  "homepage": "https://github.com/t5318019/ntut#readme",
+  "devDependencies": {
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
